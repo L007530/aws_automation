@@ -37,7 +37,7 @@ def csv_column_to_list(filename='tagged-resources.csv', column_name='Identifier'
 
 
 def main():
-    resource_list = csv_column_to_list(filename="Resource-NoTag-20221201.csv")
+    resource_list = csv_column_to_list(filename="Resource-NoTag-20221201.csv") # change the file name 
     app_list = get_value_from_yaml(selected_key='app_list')
     for resource_name in resource_list:
         res = what_app(resource_name, app_list)
